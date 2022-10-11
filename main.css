@@ -1,0 +1,23 @@
+
+body {
+  font-family: 'Archivo', sans-serif;
+  background-color: #fcfcf5;
+}
+
+.container {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  width: 10em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.69);
+  font-family: Archivo, sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 0.875em;
+  line-height: 2;
+  font-weight: 600;
+}
