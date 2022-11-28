@@ -1,7 +1,19 @@
 
 body {
+  color: rgba(0, 0, 0, 0.69);
+  font-size: 18px;
   font-family: 'Archivo', sans-serif;
   background-color: #fcfcf5;
+}
+
+#mainTitle {
+  text-align: center;
+  font-size: 4em;
+  font-family: Archivo, sans-serif;
+}
+
+#topBox {
+  text-align: center;
 }
 
 .container {
@@ -12,6 +24,7 @@ body {
 }
 
 .item {
+  display: block;
   width: 10em;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.69);
