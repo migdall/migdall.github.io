@@ -48,31 +48,67 @@
             width: 100%;
         }
 
+        /* Hamburger menu styling */
+        #nav-icon {
+            display: none;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+        }
+        #nav-icon span {
+            display: block;
+            background: #ffffff;
+            height: 2px;
+            width: 25px;
+            margin: 5px;
+        }
+        .nav-link {
+            display: none;
+        }
+
         /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
+            #nav-icon {
+                display: block;
+            }
             .hero {
                 height: 200px;
             }
+            .navigation {
+                background: none;
+            }
             .navigation a {
-                display: block;
-                margin: 10px 0;
+                display: none;
             }
             .footer {
                 position: relative;
+                width: auto;
             }
         }
     </style>
 </head>
 <body>
     <div class="hero">
-        <div class="navigation">
+        <nav class="navigation">
             <a href="#" style="color: #ffffff; margin-right: 15px;">About Us</a>
             <a href="#" style="color: #ffffff; margin-right: 15px;">Sermons</a>
             <a href="#" style="color: #ffffff; margin-right: 15px;">Events</a>
             <a href="#" style="color: #ffffff; margin-right: 15px;">Ministries</a>
             <a href="#" style="color: #ffffff; margin-right: 15px;">Give</a>
             <a href="#" style="color: #ffffff; margin-right: 15px;">Contact Us</a>
-        </div>
+            <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a class="nav-link" href="#" style="color: #ffffff; margin-right: 15px;">About Us</a>
+            <a class="nav-link" href="#" style="color: #ffffff; margin-right: 15px;">Sermons</a>
+            <a class="nav-link" href="#" style="color: #ffffff; margin-right: 15px;">Events</a>
+            <a class="nav-link" href="#" style="color: #ffffff; margin-right: 15px;">Ministries</a>
+            <a class="nav-link" href="#" style="color: #ffffff; margin-right: 15px;">Give</a>
+            <a class="nav-link" href="#" style="color: #ffffff; margin-right: 15px;">Contact Us</a>
+        </nav>
         <h1>Los Angeles Chinese SDA Church</h1>
     </div>
     <div class="content">
@@ -86,5 +122,17 @@
         <p>Location: 3000 W. Ramona Rd., Alhambra, CA 91803-4123, USA</p>
         <p>&copy; 2023 Los Angeles Chinese SDA Church</p>
     </div>
+    <script>
+        document.getElementById('nav-icon').addEventListener('click', function() {
+            const navLinks = document.getElementsByClassName('nav-link');
+            Array.from(navLinks).forEach(element => {
+                if (window.getComputedStyle(element).display === 'none') {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
