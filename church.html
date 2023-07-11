@@ -80,14 +80,33 @@
             flex: 1;
             padding: 20px;
             box-sizing: border-box;
-            text-align: justify;
+            text-align: center;
             height: 400px;
-            background-color: #f8f9fa;
+            color: #f8f9fa;
+            background-color: #343a40;
             font-size: 32px;
             overflow-wrap: break-word;
             word-wrap: break-word;
             word-break: break-word;
             border: #343a40 solid 10px;
+        }
+
+        .page-button {
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .page-button:hover {
+            background-color: #45a049;
         }
 
         #latest-news {
@@ -101,7 +120,6 @@
             word-wrap: break-word;
             word-break: break-word;
         }
-
 
         /* Hamburger menu styling */
         #nav-icon {
@@ -210,16 +228,17 @@
     </div>    
     <div class="three-column">
         <div class="column">
-            <h3>VBS registration:</h3>
-            <p><a href="https://vbspro.events/p/heroes2023" target="_blank">https://vbspro.events/p/heroes2023</a></p>
+            <h3>VBS registration</h3>
+            <a href="https://vbspro.events/p/heroes2023" target="_blank"><button class="page-button">VBS Registration</button></a>
         </div>
         <div class="column">
-            <h3>Livestream for the service:</h3>
-            <p><a href="https://www.youtube.com/c/LAChineseSDAChurch" target="_blank">https://www.youtube.com/c/LAChineseSDAChurch</a></p>
+            <h3>Livestream for the service</h3>
+            <a href="https://www.youtube.com/c/LAChineseSDAChurch" target="_blank"><button class="page-button">Watch us on YouTube</button></a>
         </div>
         <div class="column">
             <h3>English Ministry</h3>
-            <p>Wednesday Bible Study @ 7:30 PM: <a href="https://us04web.zoom.us/j/9882295290" target="_blank">https://us04web.zoom.us/j/9882295290</a></p>
+            <h5>Wednesday Bible Study starting 7:30 PM</h5>
+            <a href="https://us04web.zoom.us/j/9882295290" target="_blank"><button class="page-button">Zoom Bible Study</button></a>
         </div>
     </div>
     <div class="content">
