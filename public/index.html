@@ -9,6 +9,40 @@
             margin: 0;
             padding: 0;
         }
+
+        /* Style the container for the grid */
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Style each grid item */
+        .grid-item {
+            flex-basis: calc(33.33% - 20px); /* Adjust the width as needed */
+            margin-bottom: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Style the image in each grid item */
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Style the text at the bottom of each image */
+        .grid-item .text {
+            color: #545454;
+            padding: 10px;
+        }
+
         .hero {
             background-image: url('https://images.pexels.com/photos/14579361/pexels-photo-14579361.jpeg');
             background-size: cover;
@@ -219,21 +253,37 @@
         <div class="column">
             <p>Find God and find community.</p>
         </div>
-    </div>    
-    <div class="three-column">
-        <div class="column">
-            <h3>VBS registration</h3>
-            <a href="https://vbspro.events/p/heroes2023" target="_blank"><button class="page-button">VBS Registration</button></a>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://images.placeholders.dev/?width=520&height=520" alt="Image 1">
+            <div class="text">
+                <h3>Vacation Bible School Registration</h3>
+                <a href="https://vbspro.events/p/heroes2023" target="_blank">
+                    <button class="page-button">VBS Registration</button>
+                </a>
+            </div>
         </div>
-        <div class="column">
-            <h3>Livestream for the service</h3>
-            <a href="https://www.youtube.com/c/LAChineseSDAChurch" target="_blank"><button class="page-button">Watch us on YouTube</button></a>
+        <div class="grid-item">
+            <img src="https://images.placeholders.dev/?width=520&height=520" alt="Image 2">
+            <div class="text">
+                <h3>Livestream for the service</h3>
+                <a href="https://www.youtube.com/c/LAChineseSDAChurch" target="_blank">
+                    <button class="page-button">Watch us on YouTube</button>
+                </a>
+            </div>
         </div>
-        <div class="column">
-            <h3>English Ministry</h3>
-            <h5>Wednesday Bible Study starting 7:30 PM</h5>
-            <a href="https://us04web.zoom.us/j/9882295290" target="_blank"><button class="page-button">Zoom Bible Study</button></a>
+        <div class="grid-item">
+            <img src="https://images.placeholders.dev/?width=520&height=520" alt="Image 3">
+            <div class="text">
+                <h3>English Ministry</h3>
+                <h5>Wednesday Bible Study starting 7:30 PM</h5>
+                <a href="https://us04web.zoom.us/j/9882295290" target="_blank">
+                    <button class="page-button">Zoom Bible Study</button>
+                </a>
+            </div>
         </div>
+        <!-- Add more grid items as needed -->
     </div>
     <div class="two-column">
         <div class="column" style="width: 50%;  text-align: center;">
