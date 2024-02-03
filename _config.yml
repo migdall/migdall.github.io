@@ -1,0 +1,15 @@
+# Site settings
+title: Jesús Noland
+description: Jesús Noland's personal website
+theme: jekyll-theme-minimal
+
+# GitHub Pages settings
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-feed
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
