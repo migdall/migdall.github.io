@@ -5,10 +5,9 @@ body {
   background-color: #fcfcf5;
 }
 
-nav {
+#mainHeader {
   background-color: #fcfcf5;
   padding: 1em 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #mainTitle {
