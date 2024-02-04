@@ -19,7 +19,6 @@ layout: home
     <link href="main.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 id="mainTitle">Jes&uacute;s Noland</h1>
     <div id="topBox">
       <p>On a journey to unite the world.</p>
       <a href="https://www.linkedin.com/in/jesusnoland/" target="_blank"
@@ -27,14 +26,6 @@ layout: home
       >
     </div>
     <!-- Blog Section -->
-    <ul>
-      {% for post in site.posts %}
-      <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
-      </li>
-      {% endfor %}
-    </ul>
     <section id="blog">
       <h2>Blog Posts</h2>
       <article class="post">
