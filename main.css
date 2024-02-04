@@ -1,9 +1,14 @@
-
 body {
   color: rgba(0, 0, 0, 0.69);
   font-size: 18px;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   background-color: #fcfcf5;
+}
+
+nav {
+  background-color: #fcfcf5;
+  padding: 1em 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #mainTitle {
@@ -43,7 +48,7 @@ body {
 }
 
 #blog h2 {
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   color: #333;
   text-align: center;
   margin-bottom: 1.5em;
@@ -57,23 +62,23 @@ body {
 }
 
 .post-title {
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   color: #222;
 }
 
 .post-date {
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   color: #666;
   font-size: 0.85em;
 }
 
 .post-summary {
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   color: #555;
 }
 
 .post-link {
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   color: #1a0dab;
   text-decoration: none;
 }
@@ -81,4 +86,3 @@ body {
 .post-link:hover {
   text-decoration: underline;
 }
-
