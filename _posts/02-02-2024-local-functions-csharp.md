@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Jes&uacute;s Noland
 title: "Simplifying Your Code with Local Functions in C#: A Dive into the Main Method"
 date: 2024-02-02
 categories: [C#, Programming]
