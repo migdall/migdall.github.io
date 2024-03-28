@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jesús Noland - Creative Software Engineer</title>
+    <style>
+      body {
+        font-family: "Darker Grotesque", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto;
+        min-height: 100vh;
+        background-color: #9ba0b5;
+      }
+
+      .main-content {
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center children horizontally */
+        width: 100%; /* Ensure it takes the full width of its parent */
+        /* max-width: 1200px; Optional: limit the max width for readability */
+        margin: 20px; /* Adds some space around the content */
+      }
+
+      .card {
+        background: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 50%; /* Adjust as needed */
+        height: 800px; /* Card height set to 800px */
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+      }
+
+      .left-column {
+        padding: 20px;
+        text-align: center;
+        background: #dad6ca;
+        padding-top: 50%;
+        padding-bottom: 50%;
+        color: #0c0e0f; /* Main text color */
+        width: 50%;
+      }
+
+      .right-column {
+        padding: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .right-column img {
+        max-height: 100%; /* Ensures image doesn't exceed column height */
+        max-width: 100%; /* Ensures image doesn't exceed column width */
+        border-radius: 10px; /* Keeps your rounded corners */
+      }
+
+      .project-container {
+        display: flex;
+        align-items: center; /* Aligns items vertically in the center */
+        justify-content: space-between; /* Puts space between the text and image */
+        padding: 20px;
+        margin-top: 20px; /* Adds some space between this container and the card above */
+        background: #fff; /* Optional: Adds background color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds some shadow for depth */
+        border-radius: 10px; /* Optional: Rounds the corners */
+        width: 40%;
+      }
+
+      .project-text,
+      .project-image {
+        width: 50%; /* Splits the container into two equal parts */
+      }
+
+      .project-text {
+        padding-right: 20px; /* Adds some padding between the text and the image */
+      }
+
+      .project-image img {
+        width: 100%; /* Makes the image responsive within its container */
+        height: auto; /* Maintains aspect ratio */
+        border-radius: 0 10px 10px 0; /* Optional: Applies rounded corners on the right side */
+      }
+
+      h1,
+      h2 {
+        color: #0c0e0f; /* Main text color */
+      }
+
+      .title {
+        color: #1fc667; /* Secondary text color */
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      .name {
+        font-size: 5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="card">
+        <div class="left-column">
+          <h2>Hi everyone, my name is</h2>
+          <h1 class="name">Jesús Noland</h1>
+          <p class="title">I'm a Creative Software Engineer</p>
+        </div>
+        <div class="right-column">
+          <img src="me.png" alt="Jesús Noland" />
+        </div>
+      </div>
+      <h1>My Projects</h1>
+      <div class="project-container">
+        <div class="project-text">
+          <h3>Fat Roll</h3>
+          <p>
+            Fat Roll a mobile game on iOS and Android, built in Unity. (2022)
+          </p>
+        </div>
+        <div class="project-image">
+          <img src="fatroll.png" alt="Fat Roll" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
