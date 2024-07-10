@@ -109,6 +109,46 @@
             .name {
                 font-size: 5em;
             }
+
+            .basic-info {
+                display: flex;
+                justify-content: space-between;
+                width: 700px;
+                font-size: 32px;
+            }
+
+            @media screen and (max-width: 768px) {
+                .card {
+                    flex-direction: column; /* Stack children vertically on smaller screens */
+                    height: auto; /* Remove fixed height */
+                    width: 100%; /* Adjust to full width */
+                }
+
+                .left-column,
+                .right-column {
+                    width: 100%; /* Adjust to full width */
+                }
+
+                .project-container {
+                    flex-direction: column; /* Stack children vertically on smaller screens */
+                    width: 100%; /* Adjust to full width */
+                }
+
+                .project-text,
+                .project-image {
+                    width: 100%; /* Adjust to full width */
+                }
+
+                .project-image img {
+                    border-radius: 10px 10px 0 0; /* Optional: Applies rounded corners on top */
+                }
+
+                .basic-info {
+                    flex-direction: column; /* Stack children vertically on smaller screens */
+                    width: 100%; /* Adjust to full width */
+                    font-size: 24px; /* Adjust font size for readability */
+                }
+            }
         </style>
     </head>
     <body>
@@ -124,7 +164,7 @@
                 </div>
             </div>
             <h1>About Me</h1>
-            <p>
+            <p class="basic-info">
                 Jesús Noland is a seasoned software engineer based in Los
                 Angeles with a robust portfolio spanning multiple successful
                 projects. With a passion for creating intuitive and efficient
