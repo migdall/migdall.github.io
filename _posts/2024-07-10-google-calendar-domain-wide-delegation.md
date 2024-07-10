@@ -65,7 +65,7 @@ def set_event(event_datetime, event_name, calendar_id, sharer_email):
         SERVICE_ACCOUNT_KEY_FILE, scopes=SCOPES)
 
     # Impersonate a user in your domain
-    credentials = credentials.with_subject('jesusn@mysholder.com')
+    credentials = credentials.with_subject('foo@bar.com')
 
     try:
         service = build("calendar", "v3", credentials=credentials)
