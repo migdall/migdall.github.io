@@ -9,6 +9,10 @@
             href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
             rel="stylesheet"
         />
+        <script
+            src="https://kit.fontawesome.com/6a97354ee8.js"
+            crossorigin="anonymous"
+        ></script>
         <title>Jesús Noland - Creative Software Engineer</title>
         <style>
             body {
@@ -137,7 +141,7 @@
 
             .skills-container {
                 flex-direction: column;
-                width: 100%;
+                width: 50%;
             }
 
             .skill-text {
@@ -149,6 +153,20 @@
                 border: #0c0e0f solid 1px;
                 width: auto;
                 margin: 10px;
+            }
+
+            .links-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            .links-container a {
+                color: #0c0e0f;
+                text-decoration: none;
+                margin: 10px;
+                font-size: 48px;
             }
 
             @media screen and (max-width: 768px) {
@@ -186,6 +204,10 @@
                     width: 90%; /* Adjust to full width */
                 }
 
+                .skills-container {
+                    width: 90%; /* Adjust to full width */
+                }
+
                 .basic-info {
                     flex-direction: column; /* Stack children vertically on smaller screens */
                     width: 100%; /* Adjust to full width */
@@ -205,6 +227,24 @@
                 <div class="right-column">
                     <img src="me.png" alt="Jesús Noland" />
                 </div>
+            </div>
+            <div class="links-container">
+                <a
+                    href="https://www.linkedin.com/in/jesusnoland/"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/migdall" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                    href="https://www.producthunt.com/@jesusnoland"
+                    target="_blank"
+                    ><i class="fa-brands fa-product-hunt"></i
+                ></a>
+                <a href="https://migdall.itch.io/" target="_blank"
+                    ><i class="fa-brands fa-itch-io"></i
+                ></a>
             </div>
             <h1>About Me</h1>
             <p class="basic-info">
