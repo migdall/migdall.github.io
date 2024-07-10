@@ -117,6 +117,40 @@
                 font-size: 32px;
             }
 
+            .work-container {
+                flex-direction: column;
+                width: 50%;
+            }
+
+            .work-container h2,
+            .work-container h3,
+            .work-container h4 {
+                color: #0c0e0f;
+            }
+
+            .work-container div {
+                padding: 20px;
+                background: #dad6ca;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+
+            .skills-container {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .skill-text {
+                font-size: 24px;
+                list-style: none;
+                display: inline-block;
+                background-color: #dad6ca;
+                padding: 10px;
+                border: #0c0e0f solid 1px;
+                width: auto;
+                margin: 10px;
+            }
+
             @media screen and (max-width: 768px) {
                 .card {
                     flex-direction: column; /* Stack children vertically on smaller screens */
@@ -127,11 +161,16 @@
                 .left-column,
                 .right-column {
                     width: 100%; /* Adjust to full width */
+                    padding: 0;
+                }
+
+                .right-column img {
+                    border-radius: 0; /* Remove rounded corners */
                 }
 
                 .project-container {
                     flex-direction: column; /* Stack children vertically on smaller screens */
-                    width: 100%; /* Adjust to full width */
+                    width: 90%; /* Adjust to full width */
                 }
 
                 .project-text,
@@ -141,6 +180,10 @@
 
                 .project-image img {
                     border-radius: 10px 10px 0 0; /* Optional: Applies rounded corners on top */
+                }
+
+                .work-container {
+                    width: 90%; /* Adjust to full width */
                 }
 
                 .basic-info {
@@ -180,6 +223,125 @@
                 boundaries of what is possible with software, striving to make a
                 significant impact through his work.
             </p>
+            <h1>Skills</h1>
+            <ul class="skills-container">
+                <li class="skill-text">Python</li>
+                <li class="skill-text">NodeJS</li>
+                <li class="skill-text">Unity</li>
+                <li class="skill-text">JavaScript</li>
+                <li class="skill-text">C#</li>
+                <li class="skill-text">React</li>
+                <li class="skill-text">TypeScript</li>
+                <li class="skill-text">Docker</li>
+                <li class="skill-text">HTML</li>
+                <li class="skill-text">CSS</li>
+                <li class="skill-text">SQL</li>
+                <li class="skill-text">Git</li>
+                <li class="skill-text">Agile</li>
+                <li class="skill-text">MongoDB</li>
+                <li class="skill-text">AWS</li>
+                <li class="skill-text">CI/CD</li>
+                <li class="skill-text">PostgreSQL</li>
+            </ul>
+            <h1>Experience</h1>
+            <div class="work-container">
+                <h2>Senior Software Engineer</h2>
+                <h3>BookClub</h3>
+                <h4>07/2023 - 01/2024</h4>
+                <div>
+                    <li>
+                        Wrote code in Javascript and deployed as a microservice
+                        to integrate a book distillation engine into the
+                        software platform (SaaS) using OpenAI’s Embeddings and
+                        Chat models.
+                    </li>
+                    <li>
+                        Wrote Typescript API endpoints deployed to AWS Lambdas
+                        behind API Gateway, while tracking service performance
+                        through AWS CloudWatch.
+                    </li>
+                    <li>
+                        Led integration of SSO into our premiere product on the
+                        client side and server side as the project lead for an
+                        enterprise customer.
+                    </li>
+                </div>
+            </div>
+            <div class="work-container">
+                <h2>Senior Software Engineer</h2>
+                <h3>FlickPlay</h3>
+                <h4>01/2022 - 10/2022</h4>
+                <div>
+                    <li>
+                        Engineered and successfully deployed a suite of scalable
+                        microservices to Google Cloud, leveraging
+                        containerization with Node.js, Python, and MongoDB.
+                    </li>
+                </div>
+            </div>
+            <div class="work-container">
+                <h2>Senior Software Engineer</h2>
+                <h3>Verys</h3>
+                <h4>09/2018 - 12/2021</h4>
+                <div>
+                    <li>
+                        Created backend software as a consultant for Zenimax and
+                        First American. I worked primarily in Python, Flask,
+                        Golang, gRPC, AWS, Terraform, DynamoDB, RDS, Lambda,
+                        ECS.
+                    </li>
+                    <li>
+                        Served as a mentor to the engineers on my team and
+                        reviewed code in a lead role for our client First
+                        American.
+                    </li>
+                    <li>
+                        Developed scalable backend services for the Identity
+                        team, improving player experience and reducing server
+                        crashes.
+                    </li>
+                </div>
+            </div>
+            <div class="work-container">
+                <h2>Full Stack Developer</h2>
+                <h3>EON Reality</h3>
+                <h4>05/2017 - 09/2018</h4>
+                <div>
+                    <li>
+                        Engineered and successfully deployed a Python/Django web
+                        app that supported an AR platform using PostgreSQL.
+                    </li>
+                </div>
+            </div>
+            <div class="work-container">
+                <h2>Full Stack Web Developer</h2>
+                <h3>B&K Precision Corporation</h3>
+                <h4>11/2015 - 05/2017</h4>
+                <div>
+                    <li>
+                        Developed and maintained web applications using HTML,
+                        CSS, JavaScript, PHP, and Python.
+                    </li>
+                </div>
+            </div>
+            <div class="work-container">
+                <h2>Junior Software Engineer</h2>
+                <h3>Metronome Software</h3>
+                <h4>06/2012 - 10/2015</h4>
+                <div>
+                    <li>
+                        Contributed code daily towards large scale projects
+                        within a team in an agile and analytical software
+                        development environment.
+                    </li>
+                    <li>
+                        Utilized C++/Java/Python/Javascript in a Linux
+                        Environment to build scalable data models in an object
+                        database, greatly increasing accuracy and transparency
+                        of compliance processes.
+                    </li>
+                </div>
+            </div>
             <h1>My Projects</h1>
             <div class="project-container">
                 <div class="project-text">
