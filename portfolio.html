@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/6a97354ee8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Jesús Noland - Creative Software Engineer</title>
     <style>
       body {
@@ -109,6 +113,107 @@
       .name {
         font-size: 5em;
       }
+
+      .basic-info {
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+        font-size: 32px;
+      }
+
+      .work-container {
+        flex-direction: column;
+        width: 50%;
+      }
+
+      .work-container h2,
+      .work-container h3,
+      .work-container h4 {
+        color: #0c0e0f;
+      }
+
+      .work-container div {
+        padding: 20px;
+        background: #dad6ca;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      .skills-container {
+        flex-direction: column;
+        width: 50%;
+      }
+
+      .skill-text {
+        font-size: 24px;
+        list-style: none;
+        display: inline-block;
+        background-color: #dad6ca;
+        padding: 10px;
+        border: #0c0e0f solid 1px;
+        width: auto;
+        margin: 10px;
+      }
+
+      .links-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .links-container a {
+        color: #0c0e0f;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 48px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .card {
+          flex-direction: column; /* Stack children vertically on smaller screens */
+          height: auto; /* Remove fixed height */
+          width: 100%; /* Adjust to full width */
+        }
+
+        .left-column,
+        .right-column {
+          width: 100%; /* Adjust to full width */
+          padding: 0;
+        }
+
+        .right-column img {
+          border-radius: 0; /* Remove rounded corners */
+        }
+
+        .project-container {
+          flex-direction: column; /* Stack children vertically on smaller screens */
+          width: 90%; /* Adjust to full width */
+        }
+
+        .project-text,
+        .project-image {
+          width: 100%; /* Adjust to full width */
+        }
+
+        .project-image img {
+          border-radius: 10px 10px 0 0; /* Optional: Applies rounded corners on top */
+        }
+
+        .work-container {
+          width: 90%; /* Adjust to full width */
+        }
+
+        .skills-container {
+          width: 90%; /* Adjust to full width */
+        }
+
+        .basic-info {
+          flex-direction: column; /* Stack children vertically on smaller screens */
+          width: 100%; /* Adjust to full width */
+          font-size: 24px; /* Adjust font size for readability */
+        }
+      }
     </style>
   </head>
   <body>
@@ -123,20 +228,157 @@
           <img src="me.png" alt="Jesús Noland" />
         </div>
       </div>
-      <h1>My Projects</h1>
-      <a href="https://www.fatrollgame.com/" target="_blank">
-        <div class="project-container">
-          <div class="project-text">
-            <h3>Fat Roll</h3>
-            <p>
-              Fat Roll a mobile game on iOS and Android, built in Unity. (2022)
-            </p>
-          </div>
-          <div class="project-image">
-            <img src="fatroll.png" alt="Fat Roll" />
-          </div>
+      <div class="links-container">
+        <a href="https://www.linkedin.com/in/jesusnoland/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/migdall" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.producthunt.com/@jesusnoland" target="_blank"
+          ><i class="fa-brands fa-product-hunt"></i
+        ></a>
+        <a href="https://migdall.itch.io/" target="_blank"
+          ><i class="fa-brands fa-itch-io"></i
+        ></a>
+      </div>
+      <h1>About Me</h1>
+      <p class="basic-info">
+        I am a seasoned software engineer based in Los Angeles with a robust
+        portfolio spanning multiple successful projects. With a passion for
+        creating intuitive and efficient applications, I specialize in
+        developing software solutions that enhance user experience and
+        streamline operations. My expertise in Python, NodeJS, and Unity and
+        other modern technologies has enabled me to deliver high-quality
+        products tailored to client needs. My commitment to continuous learning
+        and adaptation is evident in every project I undertake. Whether working
+        on solo projects or collaborating in team environments, I consistently
+        aim to push the boundaries of what is possible with software, striving
+        to make a significant impact through my work.
+      </p>
+      <h1>Skills</h1>
+      <ul class="skills-container">
+        <li class="skill-text">Python</li>
+        <li class="skill-text">NodeJS</li>
+        <li class="skill-text">Unity</li>
+        <li class="skill-text">JavaScript</li>
+        <li class="skill-text">C#</li>
+        <li class="skill-text">React</li>
+        <li class="skill-text">TypeScript</li>
+        <li class="skill-text">Docker</li>
+        <li class="skill-text">HTML</li>
+        <li class="skill-text">CSS</li>
+        <li class="skill-text">SQL</li>
+        <li class="skill-text">Git</li>
+        <li class="skill-text">Agile</li>
+        <li class="skill-text">MongoDB</li>
+        <li class="skill-text">AWS</li>
+        <li class="skill-text">CI/CD</li>
+        <li class="skill-text">PostgreSQL</li>
+      </ul>
+      <h1>Experience</h1>
+      <div class="work-container">
+        <h2>Senior Software Engineer</h2>
+        <h3>BookClub</h3>
+        <h4>July 2023 - January 2024</h4>
+        <div>
+          <li>
+            Wrote code in Javascript and deployed as a microservice to integrate
+            a book distillation engine into the software platform (SaaS) using
+            OpenAI’s Embeddings and Chat models.
+          </li>
+          <li>
+            Wrote Typescript API endpoints deployed to AWS Lambdas behind API
+            Gateway, while tracking service performance through AWS CloudWatch.
+          </li>
+          <li>
+            Led integration of SSO into our premiere product on the client side
+            and server side as the project lead for an enterprise customer.
+          </li>
         </div>
-      </a>
+      </div>
+      <div class="work-container">
+        <h2>Senior Software Engineer</h2>
+        <h3>FlickPlay</h3>
+        <h4>January 2022 - October 2022</h4>
+        <div>
+          <li>
+            Engineered and successfully deployed a suite of scalable
+            microservices to Google Cloud, leveraging containerization with
+            Node.js, Python, and MongoDB.
+          </li>
+        </div>
+      </div>
+      <div class="work-container">
+        <h2>Senior Software Engineer</h2>
+        <h3>Verys</h3>
+        <h4>September 2018 - December 2021</h4>
+        <div>
+          <li>
+            Created backend software as a consultant for Zenimax and First
+            American. I worked primarily in Python, Flask, Golang, gRPC, AWS,
+            Terraform, DynamoDB, RDS, Lambda, ECS.
+          </li>
+          <li>
+            Served as a mentor to the engineers on my team and reviewed code in
+            a lead role for our client First American.
+          </li>
+          <li>
+            Developed scalable backend services for the Identity team, improving
+            player experience and reducing server crashes.
+          </li>
+        </div>
+      </div>
+      <div class="work-container">
+        <h2>Full Stack Developer</h2>
+        <h3>EON Reality</h3>
+        <h4>May 2017 - September 2018</h4>
+        <div>
+          <li>
+            Engineered and successfully deployed a Python/Django web app that
+            supported an AR platform using PostgreSQL.
+          </li>
+        </div>
+      </div>
+      <div class="work-container">
+        <h2>Full Stack Web Developer</h2>
+        <h3>B&K Precision Corporation</h3>
+        <h4>November 2015 - May 2017</h4>
+        <div>
+          <li>
+            Developed and maintained web applications using HTML, CSS,
+            JavaScript, PHP, and Python.
+          </li>
+        </div>
+      </div>
+      <div class="work-container">
+        <h2>Junior Software Engineer</h2>
+        <h3>Metronome Software</h3>
+        <h4>June 2012 - October 2015</h4>
+        <div>
+          <li>
+            Contributed code daily towards large scale projects within a team in
+            an agile and analytical software development environment.
+          </li>
+          <li>
+            Utilized C++/Java/Python/Javascript in a Linux Environment to build
+            scalable data models in an object database, greatly increasing
+            accuracy and transparency of compliance processes.
+          </li>
+        </div>
+      </div>
+      <h1>My Projects</h1>
+      <div class="project-container">
+        <div class="project-text">
+          <h3>Fat Roll</h3>
+          <p>
+            Fat Roll a mobile game on iOS and Android, built in Unity. (2022)
+          </p>
+        </div>
+        <div class="project-image">
+          <img src="fatroll.png" alt="Fat Roll" />
+        </div>
+      </div>
     </div>
   </body>
 </html>
